@@ -3,10 +3,162 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment</title>
-</head>
-<body>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-  <h1>Hello World</h1>
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <header>
+    <div class="logo-web">
+      <a href="index.html" class="logo">
+        <img src="https://picsum.photos/200/300" alt="logo-web">
+      </a>
+    </div>
+
+    <div class="navbar-link" id="welcome">
+      <nav>
+        <a class="active" href="#welcome"></a>
+        <a href="#profile">Our Profile</a>
+        <a href="#article">Facilitation</a>
+        <a href="#massage">Massage Us</a>
+      </nav>   
+    </div>
+  </header>
+
+
+  <!-- Setion Welcome -->
+  <section class="welcome-section" >
+    <div class="welcome-text">
+      <h1>Hello <span id="name">you !</span> ! welcome to my website</h1>
+      <h3>Ini adalah website latihan pertama ku</h3>
+    </div>
+
+    <hr>
+
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <img src="https://source.unsplash.com/random/800x400?sig=1" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="https://source.unsplash.com/random/800x400?sig=2" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="https://source.unsplash.com/random/800x400?sig=3" style="width:100%">
+      </div>
+      <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="next" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+    <hr>
+  </section>
+
   
+  
+  <!-- Article Section -->
+  <section class="article-section" id="article">
+    <div class="article-header">
+      <h1>Our Facilitation</h1>
+    </div>
+
+    <div class="article-list">
+
+      <div class="article-show">
+        <div class="article-img">
+          <img src="https://picsum.photos/200/300?sig=1" alt="article-1">
+        </div>
+        <div class="article-text">
+          <h3>Facility 1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, eveniet eos quam tempore id amet officiis modi? Fugit totam maxime eos, sunt suscipit dignissimos accusamus, exercitationem illo debitis, amet sed.</p>
+        </div>
+      </div>
+
+      <div class="article-show">
+        <div class="article-img">
+          <img src="https://picsum.photos/200/300?sig=2" alt="article-2">
+        </div>
+        <div class="article-text">
+          <h3>Facility 2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem alias assumenda nulla, sit veritatis necessitatibus error quo reiciendis, fuga, voluptatem illo sunt aspernatur excepturi? Doloribus similique saepe ut explicabo sed.</p>
+        </div>
+      </div>
+
+      <div class="article-show">
+        <div class="article-img">
+          <img src="https://picsum.photos/200/300?sig=3" alt="article-1">
+        </div>
+        <div class="article-text">
+          <h3>Facility 3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aspernatur quae nesciunt! Repellendus voluptas amet ipsa velit, ut illum corporis sunt sit harum cupiditate fuga. Magnam alias cupiditate fuga quasi!</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  
+  <hr>
+
+  <!-- Massage Section -->
+  <section class="massage-section" id="massage">
+    <div class="massage-div">
+      <h1>Massage Us</h1>
+
+      <div class="massage-form">
+        <form action="" class="form-input">
+          <div class="form-group">
+            <label for="name">Nama    : </label>
+            <input type="text" id="nama" placeholder="Nama">
+          </div>
+          <div class="form-group">
+            <label for="date">Tanggal Lahir   : </label>
+            <input type="date" id="tanggal">
+          </div>
+          <div class="form-group">
+            <label for="gender">Kelamin   : </label>
+            <input type="radio" id="male" name="gender" value="Laki-laki"><label for="male">Laki-laki</label>
+            <input type="radio" id="female" name="gender" value="Perempuan"><label for="female">Perempuan</label>
+          </div>
+          <div class="form-group">
+            <label for="massage">Pesan    :</label>
+            <textarea id="pesan" placeholder="Pesan"></textarea>
+          </div>
+          <div class="button-submit">
+            <button type="button" onclick="displayOutput()">Submit</button>
+          </div>
+        </form>
+
+        <form action="" class="form-output">
+          <p id="output-text"></p>
+        </form>
+      </div>
+    </div>
+    
+  </section>
+
+  <hr>
+
+  <footer>
+    <div class="footer-text" id="profile">
+      <h1>Our Profile</h1>
+      <img src="img/oyenn.png" alt="" class="foto-profile">
+      <p>Created by Nirwan</p>
+      <p>Follow me on:
+        <a href="https://www.instagram.com/your-instagram-username" target="_blank">Instagram</a>,
+        <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank">LinkedIn</a>
+      </p>
+      <p>Contact: <a href="mailto:nirvvan.rasyid@gmail.com">nirvvan.rasyid@gmail.com</a></p>
+    </div>
+  </footer>
+
+  
+  <a href="#welcome" class="to-top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+
+  <script src="js/script.js"></script>
+
 </body>
 </html>
